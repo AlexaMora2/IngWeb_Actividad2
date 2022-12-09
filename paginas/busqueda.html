@@ -11,36 +11,122 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estilos.css">
+
+    <script src="../JS/jquery.js"></script>
+    <script src="../JS/jquery.dataTables.min.js"></script>
 </head>
 
 <body>
     <header>
         <div id="titulo2">
             <h2>Búsqueda</h2>
-            <img src="../Imagenes/logo.jpg" alt="logo2" width="200" height="130"><br><br><br><br><br><br>
+            <img src="../Imagenes/logo.jpg" alt="logo2" width="200" height="130">
         </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="">Búsqueda</a></li>
-                <li><a href="nuevo.html">Nuevo</a></li>
-            </ul>
+
         </nav>
+        <ul class="menu">
+            <li class="nav-item">
+                <a class="nav-link active" href="../Index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Búsqueda</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="nuevo.html">Nuevo</a>
+            </li>
+        </ul>
+
     </header>
-    <form method="Post" action="Clases/procesar.php">
-        <Label>Búsqueda</Label><br>
-        <input type="text" name="buscar" id="buscar"><br><br>
-        <input type="button" name="buscar" value="Buscar"> <br><br><br>
-    </form>
-    <label>Resultados</label><br><br>
-    <div>
-        <div>
-            <img src="../Imagenes/Mar.jpg" width="200" height="200" alt="Avatar">
-            <h4>Pacífico Mar</h4>
-            <dire>Av. 85 #45-85 Barranquilla</dire><br>
-            <descri>Deliciosa comida de mar</descri>
-        </div>
-    </div>
+
+    <div class="container">
+        <div class="col-md-4">
+
+            <label>Busqueda:</label><br>
+            <input type="search" id="buscar" placeholder="Palabra clave"></a><br><br>
+            <label>Resultados:</label><br>
+
+            <div class="content-search">
+                <div class="content-table">
+                    <table id="table">
+                        <thead>
+                            <tr>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="row row-cols-1 row-cols-md-2 g-2 mt-3">
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="https://ciudadtrendy.mx/wp-content/uploads/2021/08/4-22.jpg" ,
+                                                    class="card-img-top" alt="Error">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Pacifico Mar</h5>
+                                                    <p class="card-text">Av. 85 #45-85 Barranquilla</p>
+                                                    <p class="card-text"><small class="text-muted">Deliciosa comida
+                                                            de mar</small></p>
+                                                </div>
+                                            </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="row row-cols-1 row-cols-md-2 g-2 mt-3">
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="https://th.bing.com/th/id/OIP.Wz5eo_PMmywvDJOFU6xphgHaJC?pid=ImgDet&rs=1"
+                                                    class="card-img-top" alt="Error">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Italiano 65</h5>
+                                                    <p class="card-text">Av. 45 #1-85 Medellín</p>
+                                                    <p class="card-text"><small class="text-muted">Deliciosa comida
+                                                            italiana</small></p>
+                                                </div>
+                                            </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="row row-cols-1 row-cols-md-2 g-2 mt-3">
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="https://th.bing.com/th/id/OIP.Am60nr8KyTdm6HzLJmAsTwHaD5?pid=ImgDet&rs=1"
+                                                    class="card-img-top" alt="Error">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Fritos y más</h5>
+                                                    <p class="card-text">Calle 45 Medellín</p>
+                                                    <p class="card-text"><small class="text-muted">Comida
+                                                            rápida</small></p>
+                                                </div>
+                                            </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="row row-cols-1 row-cols-md-2 g-2 mt-3">
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="https://th.bing.com/th/id/OIP.54jviRopMcGACmSki_QQhAHaE8?pid=ImgDet&rs=1"
+                                                    class="card-img-top" alt="Error">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Pollo frito</h5>
+                                                    <p class="card-text">Cr 32 # 56 - 89</p>
+                                                    <p class="card-text"><small class="text-muted">Lo mejor del
+                                                            pollo frito</small></p>
+                                                </div>
+                                            </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <script src="../JS/busqueda.js"></script>
 </body>
 
 </html>

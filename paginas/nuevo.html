@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
+
 <body2>
-        <header>
-            <div id="titulo3">
-                <h3>Nuevo</h3>
-                <img src="../Imagenes/logo.jpg" alt="logo2" width="200" height="130"><br><br><br><br><br><br>
-            </div>
-            <nav>
-                <ul class="menu">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="busqueda.html">Búsqueda</a></li>
-                    <li><a href="">Nuevo</a></li>
-                </ul>
-            </nav>
-        </header>
-        <form method="Post" action="Clases/procesar.php">
+    <header>
+        <div id="titulo3">
+            <h3>Nuevo</h3>
+            <img src="../Imagenes/logo.jpg" alt="logo2" width="200" height="130">
+        </div>
+
+        </nav>
+        <ul class="menu">
+            <li class="nav-item">
+                <a class="nav-link active" href="../Index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="busqueda.html">Búsqueda</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Nuevo</a>
+            </li>
+        </ul>
+
+    </header>
+
+    <form method="Post" action="Clases/procesar.js">
         <Label>Nombre:</Label><br>
-        <input type = "text" name="nombre" id="nombre" size="48"><br><br>
+        <input type="text" name="nombre" id="nombre" size="48"><br><br>
         <Label>Descripción:</Label><br>
-        <input type = "text" name="descripción" id="descripción" size="48"><br><br>
+        <input type="text" name="descripción" id="descripción" size="48"><br><br>
         <Label>Dirección:</Label><br>
-        <input type = "text" name="dirección" id="dirección" size="48"><br><br>
+        <input type="text" name="dirección" id="dirección" size="48"><br><br>
         <Label>Imagen URL:</Label><br>
-        <input type = "text" name="image" id="imagen" size="48"><br><br><br>
+        <input type="text" name="image" id="imagen" size="48"><br><br><br>
         <input type="submit" name="guardar" value="Guardar">
-        </form>
-</body>
+    </form>
+
+    </body>
+
 </html>

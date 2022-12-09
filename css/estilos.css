@@ -1,15 +1,15 @@
 body {
   background-image: url("../Imagenes/Fondo4.webp");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  background-size: 100% 300%;
 }
 
-h1{
-  style="text-align: center;";
+h1 {
+  position: absolute;
+  left: 17.5%;
+  top: 9%;
+  font-size: 80px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background-color: #53bccd;
 }
 
 .card-img-top {
@@ -18,7 +18,7 @@ h1{
   object-fit: cover;
 }
 
-.mb-right{
+.mb-right {
   margin-right: 100px;
 }
 
@@ -33,28 +33,32 @@ div {
 
 .menu {
   list-style: none;
-  padding: 0;
-  background: #092327;
-  width: 30%;
+  padding: 1px;
+  background: #29837d;
+  width: 25%;
   max-width: 1000px;
-  text-align: lefrigtht;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  box-shadow: 0 5px 10px 0 rgb(147, 49, 49);
 }
 
 .menu li a {
   text-decoration: none;
-  color: aliceblue;
-  padding: 20px;
+  color: rgb(8, 8, 8);
+  padding: 10px;
   display: block;
-  text-align: right;
+  width: 20%;
+  text-align: center;
+  font-weight: bold;
 }
 
 .menu li {
   display: inline-block;
-  text-align: right;
 }
 
-.menu li a:hover {
-  background: #ef8354;
+.menu li:hover {
+  background: #edf0f2;
 }
 
 #main_wrapper {
@@ -65,19 +69,32 @@ div {
 header h2 {
   position: absolute;
   left: 17.5%;
-  top: 6.1%;
-  font-size: 1.2cm;
-  font-weight: 100;
+  top: 9%;
+  font-size: 80px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background-color: #53bccd;
 }
 
 header h3 {
   position: absolute;
   left: 17.5%;
-  top: 6.1%;
-  font-size: 1.2cm;
-  font-weight: 100;
+  top: 9%;
+  font-size: 80px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background-color: #53bccd;
+}
+
+#table_paginate,
+#table_length,
+#table_filter,
+#table_info {
+  display: none;
+}
+
+.content-table table {
+  width: 600px;
+}
+
+.content-search {
+  top: 790px;
+  left: 0;
+  display: none;
 }
